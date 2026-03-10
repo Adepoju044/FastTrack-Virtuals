@@ -12,7 +12,6 @@ const useForm = ({ initialValues, validate, onSubmit }) => {
       [name]: type === "checkbox" ? checked : value,
     });
 
-    // Clear error for this field when user starts typing
     if (errors[name]) {
       setErrors({
         ...errors,

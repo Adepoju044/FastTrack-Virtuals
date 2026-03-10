@@ -10,11 +10,11 @@ const Button = ({
 
   const variants = {
     primary:
-      "text-white bg-gradient-to-r from-ftvprimary to-ftvprimary-400 hover:from-ftvsecondary hover:to-ftvsecondary-400 focus:ring-1 focus:outline-none focus:ring-ftvprimary shadow-lg hover:shadow-xl",
+      "text-white bg-gradient-to-r from-ftvprimary to-ftvprimary-400 hover:from-ftvsecondary hover:to-ftvsecondary-400 focus:ring-1 focus:outline-none focus:ring-ftvprimary dark:focus:ring-ftvprimary-300 shadow-lg hover:shadow-xl",
     secondary:
-      "text-white bg-ftvsecondary hover:bg-ftvsecondary-400 focus:ring-1 focus:outline-none focus:ring-ftvsecondary",
+      "text-white bg-ftvsecondary hover:bg-ftvsecondary-400 focus:ring-1 focus:outline-none focus:ring-ftvsecondary dark:focus:ring-ftvsecondary-300",
     outline:
-      "border border-ftvprimary-300 text-ftvprimary hover:bg-ftvprimary-400 hover:text-white focus:ring-2 focus:ring-ftvprimary-300",
+      "border border-ftvprimary-300 dark:border-ftvprimary-400 text-ftvprimary dark:text-ftvprimary-300 hover:bg-ftvprimary-400 hover:text-white focus:ring-2 focus:ring-ftvprimary-300 dark:focus:ring-ftvprimary-400",
   };
 
   const sizes = {

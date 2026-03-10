@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,7 @@ export default {
         },
         ftvsecondary: {
           DEFAULT: "#6360F1",
+          300: "#9997f5",
           400: "#8583f4",
         },
         ftvblack: {
@@ -24,6 +26,7 @@ export default {
         ftvgrey: {
           DEFAULT: "#909CA7",
           100: "#F9FAFB",
+          200: "#E5E7EB",
           500: "#909CA7",
           700: "#6D7B88",
         },

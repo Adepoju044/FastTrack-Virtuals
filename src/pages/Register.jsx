@@ -39,7 +39,7 @@ const Register = () => {
   });
 
   return (
-    <section className="mx-auto px-0">
+    <section className="mx-auto px-0 dark:bg-gray-900">
       <div className="flex items-center justify-center min-h-[680px] mobilelandscape:flex-nowrap flex-wrap">
         <div className="tabletmd:w-6/12 mobilelandscape:w-5/12 mobilelandscape:inline-flex hidden">
           <img
@@ -49,7 +49,7 @@ const Register = () => {
           />
         </div>
 
-        <div className="tabletmd:w-6/12 mobilelandscape:w-7/12 mobilelg:w-9/12 w-full bg-white tabletmd:px-8 px-4">
+        <div className="tabletmd:w-6/12 mobilelandscape:w-7/12 mobilelg:w-9/12 w-full bg-white dark:bg-gray-800 tabletmd:px-8 px-4">
           <div className="mobilesm:p-6 p-0 w-full">
             <Link to="/">
               <img
@@ -59,10 +59,13 @@ const Register = () => {
               />
             </Link>
 
-            <h1 className="text-2xl mobilemd:text-3xl font-bold text-ftvblack tabletmd:text-4xl mb-3">
-              Welcome to <span className="text-[#db9523]">FastTrack</span>
+            <h1 className="text-2xl mobilemd:text-3xl font-bold text-ftvblack dark:text-white tabletmd:text-4xl mb-3">
+              Welcome to{" "}
+              <span className="text-[#db9523] dark:text-ftvprimary-300">
+                FastTrack
+              </span>
             </h1>
-            <p className="text-base font-normal text-[#3B4752] mb-4">
+            <p className="text-base font-normal text-[#3B4752] dark:text-gray-300 mb-4">
               Create an account to get started.
             </p>
 
@@ -88,7 +91,7 @@ const Register = () => {
                   error={errors.password}
                 />
                 <span
-                  className="absolute inset-x-[85%] inset-y-10 text-[#6D7B88] cursor-pointer"
+                  className="absolute inset-x-[85%] inset-y-10 text-[#6D7B88] dark:text-gray-400 cursor-pointer"
                   onClick={() => setShowPassword(!showPassword)}
                 >
                   <i
@@ -107,25 +110,27 @@ const Register = () => {
                 <div className="ml-3 text-sm">
                   <label
                     htmlFor="terms"
-                    className="font-light text-ftvblack-400"
+                    className="font-light text-ftvblack-400 dark:text-gray-300"
                   >
                     I agree to the{" "}
                     <a
                       href="#"
-                      className="font-medium text-ftvprimary hover:underline"
+                      className="font-medium text-ftvprimary dark:text-ftvprimary-300 hover:underline"
                     >
                       Terms
                     </a>{" "}
                     and{" "}
                     <a
                       href="#"
-                      className="font-medium text-ftvprimary hover:underline"
+                      className="font-medium text-ftvprimary dark:text-ftvprimary-300 hover:underline"
                     >
                       Privacy Policy
                     </a>
                   </label>
                   {errors.terms && (
-                    <p className="mt-1 text-sm text-red-600">{errors.terms}</p>
+                    <p className="mt-1 text-sm text-red-600 dark:text-red-400">
+                      {errors.terms}
+                    </p>
                   )}
                 </div>
               </div>
@@ -134,11 +139,11 @@ const Register = () => {
                 Sign up
               </Button>
 
-              <p className="text-sm font-normal text-[#3B4752] text-center">
+              <p className="text-sm font-normal text-[#3B4752] dark:text-gray-300 text-center">
                 Already have an account?{" "}
                 <Link
                   to="/login"
-                  className="font-medium text-ftvblack hover:underline"
+                  className="font-medium text-ftvblack dark:text-ftvprimary-300 hover:underline"
                 >
                   Sign in
                 </Link>
