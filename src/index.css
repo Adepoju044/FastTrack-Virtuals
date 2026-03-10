@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-spacegrotesk;
+  }
+}
+
+@layer utilities {
+  .plusjakartasans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  .logo-warm-filter {
+    filter: brightness(1.1) saturate(1.2);
+  }
+}
