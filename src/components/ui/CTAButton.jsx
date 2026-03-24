@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CTAButton = ({
-  to = "#contact",
+  to = "/contact",
   children = "Book a Free Strategy Call",
   size = "lg",
   className = "",

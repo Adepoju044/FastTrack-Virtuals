@@ -45,7 +45,7 @@ const HowItWorks = () => {
             <div key={index} className="relative">
               {/* Connector Line (desktop only) */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 left-full w-full h-1 bg-gradient-to-r from-ftvprimary to-ftvsecondary dark:from-ftvprimary-400 dark:to-ftvsecondary-400 transform -translate-x-1/2 z-0"></div>
+                <div className="hidden lg:block absolute top-16 left-full w-full h-1 bg-gradient-to-r from-ftvprimary to-ftvsecondary dark:from-ftvprimary-400 dark:to-ftvsecondary-400 transform -translate-x-1/2 z-0"></div>
               )}
 
               {/* Step Card */}
