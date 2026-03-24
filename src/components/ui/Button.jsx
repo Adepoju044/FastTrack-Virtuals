@@ -10,7 +10,7 @@ const Button = ({
 
   const variants = {
     primary:
-      "text-white bg-gradient-to-r from-ftvprimary to-ftvprimary-400 hover:from-ftvsecondary hover:to-ftvsecondary-400 focus:ring-1 focus:outline-none focus:ring-ftvprimary dark:focus:ring-ftvprimary-300 shadow-lg hover:shadow-xl",
+      "text-white bg-gradient-to-r from-ftvprimary to-ftvprimary-400 hover:from-ftvprimary-400 hover:to-ftvprimary-500 focus:ring-1 focus:outline-none focus:ring-ftvprimary dark:focus:ring-ftvprimary-300 shadow-lg hover:shadow-xl",
     secondary:
       "text-white bg-ftvsecondary hover:bg-ftvsecondary-400 focus:ring-1 focus:outline-none focus:ring-ftvsecondary dark:focus:ring-ftvsecondary-300",
     outline:
